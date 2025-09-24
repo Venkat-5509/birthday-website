@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animated-text">Many more Happy returns of the Day! Nanna..</h1>
+        <p class="animated-text">Wishing you a day filled with love, laughter, as bright and beautiful as you are.</p>
+        <button id="open-image-btn">Press here to view my heart</button>
+        <div id="image-container" class="hidden">
+            <img src="view.jpg" alt="Birthday Image">
+            <p class="image-text">May all your dreams come true, and keep shining as you are. I hope our friendship lasts forever!
+       </div>
+    </div>
+
+    <script>
+        const openImageBtn = document.getElementById('open-image-btn');
+        const imageContainer = document.getElementById('image-container');
+
+        openImageBtn.addEventListener('click', () => {
+            imageContainer.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
